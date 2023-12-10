@@ -38,6 +38,9 @@ header p, nav{
 /* Menu de navegação */
 nav {
     margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
 }
 
 .menu {
@@ -56,7 +59,6 @@ a { color: white; }
 /* Seção sobre a poluição dos oceanos */
 section, footer { margin-top: 20vw; }
 
-
 main {
     text-align: justify;
 }
@@ -72,7 +74,7 @@ main p {
     font-size: 1.5rem;
 }
 
-figure { margin: 3vw; }
+figure { margin: 6vw 3vw 3vw 3vw; }
 figure a { color: blue; }
 
 
@@ -81,8 +83,10 @@ iframe { width: 100%; }
 /* Formulário */
 #donations {
     border: 1px solid black;
-    padding: 0.5vw;
-    margin: 0.5vw;
+    border-radius: 20px;
+    padding: 3vw;
+    margin-top: 10vw;
+    margin: 1vw;
 }
 
 #donations p {
@@ -94,18 +98,16 @@ form {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    border-radius: 10px;
 }
 
 input {
     padding: 12px;
     border-radius: 20px;
     border: none;
-    margin: 0.5vw;
 }
 
 textarea { max-width: 100%; }
-textarea, input { background-color: rgb(241, 241, 241); }
+textarea, input { background-color: rgb(231, 231, 231); }
 
 #submit {
     background-color: #01578d;
@@ -114,11 +116,17 @@ textarea, input { background-color: rgb(241, 241, 241); }
     font-weight: bold;
 }
 
+#submit:hover{
+    transform: scale(1.02);
+    background-color: #00a841;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
 /* Rodapé */
 footer {
     text-align: center;
-    background-color: #01578d;
-    border-radius: 100% 100% 0 0;
+    background-color: #001a3f;
     padding: 5vw;
     padding-bottom: 2.5vw;
     color: white;
@@ -127,8 +135,60 @@ footer {
 footer p {
     margin: 2vw;
     font-size: 1.5rem;
-} 
+}
+
 address p {
     margin: 0.5vw; 
     font-size: 1rem;
+}
+
+/* Adaptando para telas maiores */
+@media only screen and (min-width: 600px) {
+    div.container{
+        background-color: #001a3f;
+        padding: 0 7.5vw;
+    }
+
+    main {
+        display: flex; 
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    section {
+        text-align: center;
+        box-shadow: 0 0 15px black;
+        background-color: white;
+        margin: 0;
+        padding: 1vw;
+    }
+
+    iframe {
+        height: 40vw;
+    }
+
+    #donations {
+        margin: 5vw 0;
+        width: 60%;
+        text-align: left;
+    }
+
+    label[for="donation-amount"] { text-align: center; }
+    
+    #donation-amount{
+        width: 20%;
+        padding: 24px;
+        font-size: 1.25rem;
+        align-self: center;
+    }
+
+    footer {
+        border-radius: 0;
+        margin: 0;
+        background-color: white;
+        color: black;
+    }
+
+    address a { color: black; }
 }
