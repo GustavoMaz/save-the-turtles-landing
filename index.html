@@ -14,7 +14,7 @@
                 <ul>
                     <li><a href="#top">Início</a></li>
                     <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Doações</a></li>
+                    <li><a href="#donations">Doações</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
@@ -22,12 +22,31 @@
 
         <body>
             <main>
-                <h2>Tartarugas e a Poluição Plástica</h2>
-                <p>Confira esse vídeo da Academia Australiana de Ciências para entender o impacto da poluição dos oceanos na vida das tartarugas marinhas.</p>
-                <figure>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JIklRSR0ov4?si=ZnygT5PQrPn6FVa8" title="Tartarugas e a Poluição Plástica" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <figcaption>O vídeo mostra como o plástico despejado nos oceanos causa a morte de mais de mil tartarugas marinhas por ano.</figcaption>
-                </figure>
+                <section>
+                    <h2>Tartarugas e a Poluição Plástica</h2>
+                    <p>Confira esse vídeo da Academia Australiana de Ciências para entender o impacto da poluição dos oceanos na vida das tartarugas marinhas.</p>
+                    <figure>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JIklRSR0ov4?si=ZnygT5PQrPn6FVa8" title="Tartarugas e a Poluição Plástica" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <figcaption>O vídeo mostra como o plástico despejado nos oceanos causa a morte de mais de mil tartarugas marinhas por ano. Estima-se que mais de 50% das tartarugas marinhas já consumiram plástico em suas vidas. Em algumas regiões, esse número pode chegar a mais de 90%.</figcaption>
+                    </figure>
+                </section>
+
+                <section id="donations">
+                    <h2>Cada centavo faz a diferença</h2>
+                    <p>Ajude-nos a proteger as tartarugas marinhas com uma doação em qualquer valor.</p>
+                    <form>
+                        <label for="name">Nome:</label>
+                        <input type="text" name="name" id="name" placeholder="Seu nome">
+                        <br>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="seu-email@exemplo.com">
+                        <br>
+                        <label for="donation-amount">Valor da doação: R$:</label>
+                        <input type="number" name="donation-amount" id="donation-amount" placeholder="00,00">
+                        <br>
+                        <input type="submit" value="Confirmar">
+                    </form>
+                </section>
             </main>
         </body>
     </body>
