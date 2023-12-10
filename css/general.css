@@ -31,18 +31,104 @@ h1 {
     margin: 2vw;
 }
 
+header p, nav{
+    width: 300px;
+}
+
 /* Menu de navegação */
 nav {
     margin-top: 90px;
-    width: 300px;
 }
+
 .menu {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
 }
+
 .menu-item { 
     list-style: none; 
     margin: 1vw;
 }
-.menu-item a { color: white; }
+
+a { color: white; }
+
+/* Seção sobre a poluição dos oceanos */
+section, footer { margin-top: 20vw; }
+
+
+main {
+    text-align: justify;
+}
+
+h2 {
+    text-align: center;
+    margin: 2vw;
+    font-size: 2rem;
+}
+
+main p {
+    margin: 2vw;
+    font-size: 1.5rem;
+}
+
+figure { margin: 3vw; }
+figure a { color: blue; }
+
+
+iframe { width: 100%; }
+
+/* Formulário */
+#donations {
+    border: 1px solid black;
+    padding: 0.5vw;
+    margin: 0.5vw;
+}
+
+#donations p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+input {
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    margin: 0.5vw;
+}
+
+textarea { max-width: 100%; }
+textarea, input { background-color: rgb(241, 241, 241); }
+
+#submit {
+    background-color: #01578d;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background-color: #01578d;
+    border-radius: 100% 100% 0 0;
+    padding: 5vw;
+    padding-bottom: 2.5vw;
+    color: white;
+}
+
+footer p {
+    margin: 2vw;
+    font-size: 1.5rem;
+} 
+address p {
+    margin: 0.5vw; 
+    font-size: 1rem;
+}
