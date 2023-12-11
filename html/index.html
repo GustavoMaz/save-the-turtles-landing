@@ -10,16 +10,18 @@
 
     <body>
         <header role="banner">
-            <h1 lang="en">Save the Turtles</h1>
-            <p>Salve as tartarugas, salve o planeta: <strong>sua doação faz a diferença.</strong></p>
-            <nav role="navigation">
-                <ul class="menu">
-                    <li class="menu-item"><a href="#top">Início</a></li>
-                    <li class="menu-item"><a href="#cause">Causa</a></li>
-                    <li class="menu-item"><a href="#donations">Doações</a></li>
-                    <li class="menu-item"><a href="#contact">Contato</a></li>
-                </ul>
-            </nav>
+            <div class="gradient">
+                <h1 lang="en">Save the Turtles</h1>
+                <p>Salve as tartarugas, salve o planeta: <strong>sua doação faz a diferença.</strong></p>
+                <nav role="navigation">
+                    <ul class="menu">
+                        <li class="menu-item"><a href="#top">Início</a></li>
+                        <li class="menu-item"><a href="#cause">Causa</a></li>
+                        <li class="menu-item"><a href="#donations">Doações</a></li>
+                        <li class="menu-item"><a href="#contact">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <div class="container">
@@ -31,35 +33,35 @@
                         <iframe height="315" src="https://www.youtube.com/embed/JIklRSR0ov4?si=ZnygT5PQrPn6FVa8" title="Tartarugas e a Poluição Plástica" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         <br>
                         <cite> <!--Citando o autor do vídeo-->
-                            <span lang="en">Australian Academy of Science. <a href="https://www.youtube.com/watch?v=JIklRSR0ov4&ab_channel=AustralianAcademyofScience">Turtles and plastic pollution.</a></span> YouTube. (2018, 13 de Setembro).
+                            <p><span lang="en">Australian Academy of Science. <a href="https://www.youtube.com/watch?v=JIklRSR0ov4&ab_channel=AustralianAcademyofScience">Turtles and plastic pollution.</a></span> YouTube. (2018, 13 de Setembro).</p>
                         </cite>
                         <figcaption>
                             <p>O vídeo mostra como o <strong>plástico</strong> despejado nos oceanos causa a morte de <strong>mais de mil tartarugas</strong> marinhas por ano. Estima-se que mais de <strong>50% das tartarugas marinhas já consumiram plástico</strong> em suas vidas. Em algumas regiões, esse número pode chegar a mais de 90%.</p>
                         </figcaption>
                     </figure>
                 </section>
+            </main>
 
-                <section id="donations">
+            <section id="donations">
+                <form>
                     <h2>Cada centavo faz a diferença</h2>
                     <p>Ajude-nos a proteger as tartarugas marinhas com uma doação em qualquer valor.</p>
-                    <form>
-                        <label for="name">Nome:</label>
-                        <input type="text" name="name" id="name" placeholder="Seu nome">
-                        <br>
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email" placeholder="seu-email@exemplo.com">
-                        <br>
-                        <label for="donation-amount">Valor da doação:</label>
-                        <input type="text" name="donation-amount" id="donation-amount" placeholder="00,00" value="R$: ">
-                        <br>
-                        <label for="message">Deixe uma mensagem (opcional): </label>
-                        <br>
-                        <textarea id="message" name="message" rows="8"></textarea>
-                        <br>
-                        <input type="submit" value="Confirmar" id="submit">
-                    </form>
-                </section>
-            </main>
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" id="name" placeholder="Seu nome">
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="seu-email@exemplo.com">
+                    <br>
+                    <label for="donation-amount">Valor da doação:</label>
+                    <input type="text" name="donation-amount" id="donation-amount" value="R$: 00,00">
+                    <br>
+                    <label for="message">Deixe uma mensagem (opcional): </label>
+                    <br>
+                    <textarea id="message" name="message" rows="8"></textarea>
+                    <br>
+                    <input type="submit" value="Confirmar" id="submit">
+                </form>
+            </section>
         </div>
 
         <footer id="contact">
