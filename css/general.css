@@ -132,7 +132,7 @@ input {
 
 label[for="donation-amount"], #donation-amount { text-align: center; }
     
-#donation-amount{
+#donation-amount, #submit {
     width: 60%;
     min-width: 200px;
     padding: 24px;
@@ -164,11 +164,6 @@ footer {
     padding-bottom: 2.5vw;
 }
 
-footer p {
-    margin: 2vw;
-    font-size: 1.5rem;
-}
-
 address p {
     margin: 0.5vw; 
     font-size: 1rem;
@@ -198,9 +193,12 @@ address p {
     
     #donation-amount { 
         width: 20%;
-        max-width: 400px;
     }
     
+    #submit {
+        width: 40%;
+    }
+
     footer {
         padding: 2vw;
     }
