@@ -1,3 +1,7 @@
+/* Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Neuton:wght@200;300;400;700&family=Playfair+Display:wght@500&family=Poppins:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+
+/* Ubuntu */
+@import url('https://fonts.googleapis.com/css2?family=Neuton:wght@200;300;400;700&family=Playfair+Display:wght@500&family=Poppins:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,300&family=Ubuntu:wght@400;700&display=swap');
 
 html { font-size: 16px; }

@@ -38,8 +38,11 @@ h1 {
     margin: 2vw;
 }
 
+h1, h2 { font-family: "Ubuntu", sans-serif; }
+
 header p, nav{
-    width: 300px;
+    width: 95vw;
+    max-width: 300px;
 }
 
 /* Menu de navegação */
@@ -67,10 +70,24 @@ nav {
     color: rgb(165, 165, 165);
 }
 
-a { color: white; }
+.menu-item a { color: white; }
 
 /* Seção sobre a poluição dos oceanos */
-section, footer { margin-top: 20vw; }
+.container{
+    background-color: #001a3f;
+    padding: 0 2.5vw 5vw;
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+section {
+    box-shadow: 0 0 15px black;
+    background-color: white;
+    margin-bottom: 10vw;
+    padding: 3vw;
+}
 
 main {
     text-align: justify;
@@ -84,27 +101,21 @@ h2 {
 
 main p {
     margin: 2vw;
-    font-size: 1.5rem;
 }
 
-figure { margin-top: 6vw; margin: 3vw; }
-cite p { text-align: left; font-size: 1rem; margin: 0.25vw;}
-figure a { color: blue; }
-
+.cite-text { text-align: left; font-size: 1rem; margin: 0.25vw;}
 iframe { width: 100%; }
 
 /* Formulário */
 #donations {
-    border: 1px solid black;
     border-radius: 20px;
-    padding: 3vw;
-    margin-top: 10vw;
-    margin: 1vw;
+    margin: 5vw 0;
 }
 
 #donations p {
     font-size: 1rem;
     text-align: center;
+    margin: 1vw;
 }
 
 form {
@@ -123,12 +134,13 @@ label[for="donation-amount"], #donation-amount { text-align: center; }
     
 #donation-amount{
     width: 60%;
+    min-width: 200px;
     padding: 24px;
     font-size: 1.25rem;
     align-self: center;
 }
 
-textarea { max-width: 100%; }
+textarea { padding: 0.5vw; font-size: 1rem; max-width: 100%; }
 textarea, input { background-color: rgb(231, 231, 231); }
 
 #submit {
@@ -148,10 +160,8 @@ textarea, input { background-color: rgb(231, 231, 231); }
 /* Rodapé */
 footer {
     text-align: center;
-    background-color: #001a3f;
     padding: 5vw;
     padding-bottom: 2.5vw;
-    color: white;
 }
 
 footer p {
@@ -166,21 +176,13 @@ address p {
 
 /* Adaptando para telas maiores */
 @media only screen and (min-width: 600px) {
-    .container{
-        background-color: #001a3f;
-        padding: 0 7.5vw;
-        display: flex; 
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
-    }
+    .container { padding: 0 7.5vw; }
 
-    section {
-        text-align: center;
-        box-shadow: 0 0 15px black;
-        background-color: white;
-        margin: 0;
-        padding: 1vw;
+    main p { font-size: 1.5rem; }
+
+    section { 
+        text-align: center; 
+        margin-bottom: 3vw;
     }
 
     iframe {
@@ -188,18 +190,18 @@ address p {
     }
 
     #donations {
-        margin: 5vw 0;
         width: 60%;
         text-align: left;
+        min-width: 500px;
+        max-width: 1000px;
     }
     
-    #donation-amount{ width: 20%; }
-
-    footer {
-        border-radius: 0;
-        margin: 0;
-        background-color: white;
+    #donation-amount { 
+        width: 20%;
+        max-width: 400px;
     }
-
-    address a, footer { color: black; }
+    
+    footer {
+        padding: 2vw;
+    }
 }
