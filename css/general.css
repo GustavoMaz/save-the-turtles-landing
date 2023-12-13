@@ -21,7 +21,7 @@ body {
 }
 
 header {
-    background-image: url(../img/turtle-bg.jpg);
+    background-image: url(../img/turtle-header.jpg);
     background-color: #001a3f;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -68,8 +68,7 @@ nav, .menu { width: 90vw; max-width: 500px; }
 /* Conteúdo principal */
 .container{
     background-color: #001a3f;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), #000a18);
-    padding: 0 2.5vw 5vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), #000a18, #01578d);
     display: flex; 
     flex-direction: column;
     flex-wrap: nowrap;
@@ -83,7 +82,12 @@ section {
     padding: 3vw;
 }
 
-main { text-align: justify; width: 100vw; }
+main {
+    text-align: justify; 
+    width: 100vw;
+}
+
+#cause { border-radius: 8px; }
 
 h2 {
     text-align: center;
@@ -107,7 +111,10 @@ main p {
 iframe { width: 100%; }
 
 /* Formulário */
-#donations { border-radius: 20px; }
+#donations { 
+    border-radius: 20px;
+    width: 90%;
+}
 
 #donations p {
     font-size: 1rem;
@@ -163,6 +170,9 @@ footer {
     text-align: center;
     padding: 10vw 0 5vw;
     height: 100px;
+    border-radius: 90% 90% 0 0;
+    background-color: white;
+    width: 100%;
 }
 
 address p {
@@ -172,9 +182,7 @@ address p {
 
 /* Adaptando para telas maiores */
 @media only screen and (min-width: 600px) {
-    .container { padding: 0 7.5vw; }
-
-    main { width: auto; }
+    main { width: 85vw; }
     main p { font-size: 1.5rem; line-height: 2rem; }
 
     section { 
