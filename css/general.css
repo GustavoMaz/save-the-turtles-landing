@@ -75,7 +75,7 @@ nav, .menu { width: 90vw; max-width: 500px; }
     align-items: center;
 }
 
-section {
+.container-item {
     box-shadow: 0 0 15px black;
     background-color: white;
     margin-bottom: 10vw;
@@ -84,10 +84,8 @@ section {
 
 main {
     text-align: justify; 
-    width: 100vw;
+    width: 94vw;
 }
-
-#cause { border-radius: 8px; }
 
 h2 {
     text-align: center;
@@ -182,10 +180,10 @@ address p {
 
 /* Adaptando para telas maiores */
 @media only screen and (min-width: 600px) {
-    main { width: 85vw; }
+    main { width: 85vw; border-radius: 8px; }
     main p { font-size: 1.5rem; line-height: 2rem; }
 
-    section { 
+    .container-item { 
         text-align: center; 
         margin-bottom: 3vw;
     }
