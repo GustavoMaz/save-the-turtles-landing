@@ -103,7 +103,7 @@ main p {
 
 .author-reference { 
     text-align: left; 
-    font-size: 1rem; 
+    font-size: 14px; 
     margin: 0.25vw;
     font-style: italic;
 }
@@ -190,9 +190,8 @@ address p {
         margin-bottom: 3vw;
     }
 
-    iframe {
-        height: 40vw;
-    }
+    iframe { height: 40vw; }
+    .author-reference { font-size: 1rem; } 
 
     #donations {
         width: 60%;
