@@ -21,3 +21,4 @@ Informações de direitos autorais ou outras informações relevantes.
 ## Linguagens utilizadas
 
 Por se tratar de uma avaliação de habilidades front-end, o projeto todo foi desenvolvido com HTML5 e CSS3.
+
